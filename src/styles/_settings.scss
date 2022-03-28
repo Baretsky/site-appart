@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url(../assets/fonts/RobotoCondensed-Regular.ttf);
+}
+
+$font-1: "RobotoCondensed-Regular", sans-serif;
+
+$color-1: #364652;
+$color-2: #071108;
+$color-3: #bfb1c1;
+$color-4: #b5bec6;
+$color-5: #c7dbe6;
+$white: rgb(255, 255, 255);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-5;
+  font-family: $font-1;
+  // @include verticalCenter;
+}
+li {
+  list-style-type: none;
+}
